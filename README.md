@@ -1,2 +1,2 @@
 # dayjs-range
-dayjs Extends Plugin for range
+Range Extends Plugin for [dayjs](https://github.com/iamkun/dayjs)

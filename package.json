@@ -1,0 +1,31 @@
+{
+  "name": "dayjs-range",
+  "version": "1.0.0",
+  "description": "Range extends For dayjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imwh0im/dayjs-range.git"
+  },
+  "keywords": [
+    "dayjs",
+    "dayjs-range",
+    "dayjs-plugin",
+    "date"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imwh0im/dayjs-range/issues"
+  },
+  "homepage": "https://github.com/imwh0im/dayjs-range#readme",
+  "devDependencies": {
+    "@types/node": "^16.11.3",
+    "dayjs": "^1.10.7",
+    "jest": "^27.3.1",
+    "typescript": "^4.4.4"
+  }
+}

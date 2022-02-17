@@ -1,0 +1,11 @@
+src/
+docs/
+.github/
+tsconfig.json
+tsconfig.type.json
+release.config.js
+.eslintignore
+.eslintrc.js
+package-lock.json
+.prettierignore
+.prettierrc.js

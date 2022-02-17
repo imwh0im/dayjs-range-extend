@@ -1,0 +1,41 @@
+name: pull request
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+    
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Use Node.js 16
+      uses: actions/setup-node@v1
+      with:
+        node-version: "16"
+
+    - name: Install
+      run: |
+        npm ci
+
+    - name: Lint
+      run: |
+        npm run lint
+    
+    - name: Format
+      run: |
+        npm run format
+
+    - name: Test
+      run: |
+        npm run test
+
+    - name: Build
+      run: |
+        npm run build

@@ -1,6 +1,6 @@
 {
-  "name": "dayjs-range",
-  "version": "1.0.0",
+  "name": "dayjs-range-extend",
+  "version": "0.0.0-development",
   "description": "Range extends For dayjs",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -9,26 +9,32 @@
     "build": "tsc -p tsconfig.json && npm run build:type",
     "build:type": "tsc -p tsconfig.type.json",
     "lint": "eslint \"src/**/*.ts\"",
+    "format": "prettier --write \"src/**/*.ts\"",
     "test": "jest",
-    "test:cov": "jest --coverage --no-cache --detectOpenHandles"
+    "test:cov": "jest --coverage --no-cache --detectOpenHandles",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/imwh0im/dayjs-range.git"
+    "url": "https://github.com/imwh0im/dayjs-range.git"
   },
   "keywords": [
     "dayjs",
     "dayjs-range",
     "dayjs-plugin",
-    "date"
+    "date",
+    "dayjs-range-extend"
   ],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/imwh0im/dayjs-range/issues"
+    "url": "https://github.com/imwh0im/dayjs-range-extend/issues"
   },
-  "homepage": "https://github.com/imwh0im/dayjs-range#readme",
+  "homepage": "https://github.com/imwh0im/dayjs-range-extend#readme",
   "devDependencies": {
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.2",
+    "@semantic-release/npm": "^9.0.0",
     "@types/jest": "^27.4.0",
     "@types/node": "^16.11.3",
     "@typescript-eslint/eslint-plugin": "^5.12.0",
@@ -41,6 +47,7 @@
     "mockdate": "^3.0.5",
     "prettier": "^2.5.1",
     "rimraf": "^3.0.2",
+    "semantic-release": "^19.0.2",
     "ts-jest": "^27.1.3",
     "ts-node": "^10.5.0",
     "typescript": "^4.5.5"

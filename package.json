@@ -8,7 +8,7 @@
     "prebuild": "rimraf dist",
     "build": "tsc -p tsconfig.json && npm run build:type",
     "build:type": "tsc -p tsconfig.type.json",
-    "lint": "eslint \"src/**/*.ts\"",
+    "lint": "eslint \"{test,src}/**/*.ts\"",
     "format": "prettier --write \"src/**/*.ts\"",
     "test": "jest",
     "test:cov": "jest --coverage --no-cache --detectOpenHandles",

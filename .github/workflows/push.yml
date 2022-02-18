@@ -26,7 +26,15 @@ jobs:
         run: npm run format
 
       - name: Test
-        run: npm run test
+        run: | 
+          npm run test
+          npm run test:cov
+      
+      - name: Code Cov
+        uses: codecov/codecov-action@v2
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
+          directory: './coverage'
 
       - name: Build
         run: npm run build

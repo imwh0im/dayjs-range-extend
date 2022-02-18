@@ -12,6 +12,7 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "test": "jest",
     "test:cov": "jest --coverage --no-cache --detectOpenHandles",
+    "codecov": "codecov",
     "semantic-release": "semantic-release"
   },
   "repository": {
@@ -39,6 +40,7 @@
     "@types/node": "^16.11.3",
     "@typescript-eslint/eslint-plugin": "^5.12.0",
     "@typescript-eslint/parser": "^5.12.0",
+    "codecov": "^3.8.3",
     "eslint": "^8.9.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^8.3.0",

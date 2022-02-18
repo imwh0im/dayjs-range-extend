@@ -48,7 +48,7 @@ class DayjsRange {
   }
 
   /**
-   * This indicates whether the DayjsRange object is the same as the other supplied DayjsRange.
+   * This indicates whether the DayjsRange object is the same as the other supplied Date range.
    * ```
    * dayjsRange().isEqual(dayjsRange()) // => boolean
    * ```

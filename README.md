@@ -30,5 +30,16 @@ Range Extends for [dayjs](https://github.com/iamkun/dayjs)
   ); // => true
   ```
 
+### Documentaion
+  - [dayjsRange](/docs/dayjs-range.md)
+  - [isValidRange](/docs/is-valid-range.md)
+  - [clone](/docs/clone.md)
+  - [isOverlap](/docs/is-overlap.md)
+  - [isEqual](/docs/is-equal.md)
+  - [addStartRange](/docs/add-start-range.md)
+  - [addEndRange](/docs/add-end-range.md)
+  - [subtractStartRange](/docs/subtract-start-range.md)
+  - [subtractEndRange](/docs/subtract-end-range.md)
+
 #### Link
   - [dayjs](https://github.com/iamkun/dayjs)

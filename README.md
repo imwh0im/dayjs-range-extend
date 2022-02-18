@@ -23,7 +23,7 @@
 
 ## How to use
   ```typescript
-  import 'dayjsRange' from 'dayjs-range-extend';
+  import dayjsRange from 'dayjs-range-extend';
 
   const date_range_first = dayjsRange('2022-01-01', '2022-01-05');
   const date_range_second = dayjsRange('2022-01-04', '2022-01-10');

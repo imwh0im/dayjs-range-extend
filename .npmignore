@@ -2,7 +2,8 @@ src/
 docs/
 .github/
 test/
-.jest.config.js
+coverage/
+jest.config.js
 tsconfig.json
 tsconfig.type.json
 release.config.js

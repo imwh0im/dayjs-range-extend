@@ -45,4 +45,6 @@
   - [subtractEndRange](/docs/subtract-end-range.md)
 
 ### Link
-  - [dayjs](https://github.com/iamkun/dayjs)
+  - [Day.js](https://github.com/iamkun/dayjs)
+  - [TypeScript](https://github.com/microsoft/TypeScript)
+  - [Jest](https://github.com/facebook/jest)

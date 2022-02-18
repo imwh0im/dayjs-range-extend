@@ -39,7 +39,7 @@ jobs:
 
     - name: Report to Coverage
       uses: codecov/codecov-action@v2
-      with: |
+      with:
         token: ${{ secrets.CODECOV_TOKEN }}
         directory: ./coverage
         

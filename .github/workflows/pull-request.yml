@@ -35,6 +35,15 @@ jobs:
     - name: Test
       run: |
         npm run test
+        npm run test:cov
+
+    - name: Report to Coverage
+      uses: codecov/codecov-action@v2
+      with: |
+        token: ${{ secrets.CODECOV_TOKEN }}
+        directory: ./coverage
+        
+        
 
     - name: Build
       run: |

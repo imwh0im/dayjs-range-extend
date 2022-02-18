@@ -1,3 +1,5 @@
+<p align="center">Date Range Module Based on <a href="https://github.com/iamkun/dayjs" target="_blank">Day.js</a></p>
+
 <p align="center">
     <a href="https://www.npmjs.com/package/dayjs-range-extend">
         <img src="https://img.shields.io/npm/v/dayjs-range-extend.svg?style=flat-square&colorB=51C838" alt="NPM Version" />
@@ -10,15 +12,16 @@
     </a>
 </p>
 
-# dayjs-range-extend
-Range Extends for [dayjs](https://github.com/iamkun/dayjs)
+## Description
+<p>dayjs-range-extend is an extended module based on Day.js (can use the function of Day.js) that provides a date range.</p>
+<p>Built with <a href="https://github.com/microsoft/TypeScript" target="_blank">TypeScript</a> and Maintains stability based on Unit-Test (used <a href="https://github.com/facebook/jest">Jest</a>)</p>
 
-### Installation
+## Installation
   ```sh
   $ npm i --save dayjs-range-extend
   ```
 
-### How to use
+## How to use
   ```typescript
   import 'dayjsRange' from 'dayjs-range-extend';
 
@@ -30,7 +33,7 @@ Range Extends for [dayjs](https://github.com/iamkun/dayjs)
   ); // => true
   ```
 
-### Documentaion
+## Documentaion
   - [dayjsRange](/docs/dayjs-range.md)
   - [isValidRange](/docs/is-valid-range.md)
   - [clone](/docs/clone.md)
@@ -41,5 +44,5 @@ Range Extends for [dayjs](https://github.com/iamkun/dayjs)
   - [subtractStartRange](/docs/subtract-start-range.md)
   - [subtractEndRange](/docs/subtract-end-range.md)
 
-#### Link
+### Link
   - [dayjs](https://github.com/iamkun/dayjs)

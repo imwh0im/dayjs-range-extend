@@ -61,6 +61,9 @@ it('range isOverlap', () => {
     dayjsRange(startDate, endDate).isOverlap(dayjsRange(startDate, endDate)),
   ).toBe(true);
   expect(
+    dayjsRange(startDate, otherDate).isOverlap(dayjsRange(startDate, endDate)),
+  ).toBe(true);
+  expect(
     dayjsRange(startDate, otherDate2).isOverlap(dayjsRange(endDate, otherDate)),
   ).toBe(true);
   expect(

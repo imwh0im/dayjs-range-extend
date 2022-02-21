@@ -41,11 +41,14 @@ class DayjsRange {
     }
 
     return (
-      (this.startDate > other.startDate && this.startDate < other.endDate) ||
-      (this.endDate >= other.startDate &&
-        this.endDate < other.endDate &&
-        !this.endDate.isSame(other.startDate)) ||
-      (this.startDate <= other.startDate && this.endDate > other.endDate) ||
+      (this.startDate.isAfter(other.startDate) &&
+        this.startDate.isBefore(other.endDate)) ||
+      (this.endDate.isAfter(other.startDate) &&
+        this.endDate.isBefore(other.endDate)) ||
+      (other.startDate.isAfter(this.startDate) &&
+        other.startDate.isBefore(this.endDate)) ||
+      (other.endDate.isAfter(this.startDate) &&
+        other.endDate.isBefore(this.endDate)) ||
       (this.startDate.isSame(other.startDate) &&
         this.endDate.isSame(other.endDate))
     );

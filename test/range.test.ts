@@ -43,19 +43,16 @@ it('range isOverlap', () => {
   const otherDate2 = '2021-07-19 00:00:00';
 
   expect(
-    dayjsRange(startDate, endDate).isOverlap(dayjsRange(startDate, endDate)),
-  ).toBe(true);
-  expect(
-    dayjsRange(endDate, startDate).isOverlap(dayjsRange(startDate, endDate)),
-  ).toBe(true);
-  expect(
-    dayjsRange(startDate, endDate).isOverlap(dayjsRange(endDate, otherDate)),
-  ).toBe(true);
-  expect(
-    dayjsRange(startDate, endDate).isOverlap(dayjsRange(otherDate, otherDate2)),
-  ).toBe(false);
-  expect(
     dayjsRange(startDate, otherDate).isOverlap(dayjsRange(endDate, otherDate2)),
+  ).toBe(true);
+  expect(
+    dayjsRange(endDate, otherDate2).isOverlap(dayjsRange(startDate, otherDate)),
+  ).toBe(true);
+  expect(
+    dayjsRange(startDate, endDate).isOverlap(dayjsRange(startDate, otherDate)),
+  ).toBe(true);
+  expect(
+    dayjsRange(startDate, otherDate).isOverlap(dayjsRange(startDate, endDate)),
   ).toBe(true);
   expect(
     dayjsRange(startDate, otherDate2).isOverlap(dayjsRange(endDate, otherDate)),
@@ -63,9 +60,39 @@ it('range isOverlap', () => {
   expect(
     dayjsRange(endDate, otherDate).isOverlap(dayjsRange(startDate, otherDate2)),
   ).toBe(true);
+  expect(
+    dayjsRange(startDate, endDate).isOverlap(dayjsRange(startDate, endDate)),
+  ).toBe(true);
+  expect(
+    dayjsRange(startDate, endDate).isOverlap(dayjsRange(otherDate, otherDate2)),
+  ).toBe(false);
+  expect(
+    dayjsRange(otherDate, otherDate2).isOverlap(dayjsRange(startDate, endDate)),
+  ).toBe(false);
+  expect(
+    dayjsRange(startDate, endDate).isOverlap(dayjsRange(endDate, otherDate)),
+  ).toBe(false);
+  expect(
+    dayjsRange(endDate, otherDate).isOverlap(dayjsRange(startDate, endDate)),
+  ).toBe(false);
+  expect(
+    dayjsRange(startDate, startDate).isOverlap(dayjsRange(startDate, endDate)),
+  ).toBe(false);
+  expect(
+    dayjsRange(startDate, endDate).isOverlap(dayjsRange(startDate, startDate)),
+  ).toBe(false);
+  expect(
+    dayjsRange(endDate, endDate).isOverlap(dayjsRange(startDate, endDate)),
+  ).toBe(false);
+  expect(
+    dayjsRange(startDate, endDate).isOverlap(dayjsRange(endDate, endDate)),
+  ).toBe(false);
   expect(dayjsRange(endDate, otherDate).isOverlap()).toBe(false);
   expect(
     dayjsRange(startDate, endDate).isOverlap(dayjsRange(startDate, null)),
+  ).toBe(false);
+  expect(
+    dayjsRange(startDate, endDate).isOverlap(dayjsRange(endDate, endDate)),
   ).toBe(false);
 });
 
